@@ -1,9 +1,9 @@
 // import style here
 
-const BillingAddress =  props =>{
+const BillingAddress =  ({theAddress}) =>{
     <div>
         <h4>Billing Address</h4>
-        <p>{props.content}</p>
+        <p>{theAddress}</p>
     </div> 
 }
 

@@ -8,14 +8,14 @@ const layoutStyle = {
   border: '1px solid #DDD'
 };
 
-const OrderDetail = props => (
-  <div style={layoutStyle}>
-    <div class="row">
-      <div class="column">{BillingAddress(props.somthing)}</div>
-      <div class="column">{PaymentMethod(props.somthing)}</div>
-      <div class="column">{OrderDetail(props.somthing)}</div>
-</div>
-  </div>
-);
+const OrderDetail = ({theAddress, theMethod, theDetail}) => {
+    return (
+          <div class="row">
+            <div class="column">{BillingAddress({theAddress})}</div>
+            <div class="column">{PaymentMethod({theMethod})}</div>
+            <div class="column">{OrderDetail({theDetail})}</div>
+          </div>
+    );
+};
 
 export default OrderDetail;

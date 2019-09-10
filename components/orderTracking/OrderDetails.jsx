@@ -1,9 +1,9 @@
 // import some styles here
 
-const OrderDetils =  props =>{
+const OrderDetils =  ({theDetail}) =>{
     <div>
         <h4>Billing Address</h4>
-        <p>{props.content}</p>
+        <p>{theDetail}</p>
     </div> 
 }
 
